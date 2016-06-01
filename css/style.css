@@ -8,51 +8,15 @@
 }
 
 #map_canvas{
-    width: 898px;
-    margin-left:-15px;
-    height: 500px;
-
-
+    width: 900px;
+    height: 900px;
+    background-color: #CCC;
 }
 .modal-content{
-
-    margin-top: 133px;
     margin-right:1000px;
-    margin-left: -42px;
+    -webkit-border-radius: 0px !important;
+    -moz-border-radius: 0px !important;
+    border-radius: 0px !important;
 }
 
 
-
-
-
-.btn-secret {
-
-
-    height:51px;
-    margin-left:930px ;
-    margin-top: -237px;
-
-}
-.btn-home {
-
-
-    height:51px;
-    margin-left:500px ;
-    margin-top: 31px;
-
-}
-.btn-boussole {
-
-
-    height:51px;
-    margin-left:740px ;
-    margin-top: 29px;
-
-}
-
-.btn-plume
-{
-    height:45px;
-    margin-top:320px;
-    margin-left: 58px;
-}

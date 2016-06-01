@@ -1,51 +1,89 @@
 <html lang="fr">
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="#CHEMIN{css/bootstrap.min.css}" />
-    <link rel="stylesheet" type="text/css" href="#CHEMIN{css/style.css}" />
-</head>
-<body class="BG">
-<header>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+        <link rel="stylesheet" type="text/css" href="css/style.css" />
+    </head>
+        <body class="BG">
+            <header>
 
-</header>
+            </header>
+<!-- MAP MODAL -->
+            <p>
+                <!-- Button trigger modal -->
+                <a type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+                   map
+                </a>
+            </p>
 
-<!-- Button trigger modal -->
-<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
-    Launch demo modal
-</button>
-
-<nav>
-    <ul class="nav-masthead-nav">
-        <li class="active"><img src="#CHEMIN{IMG/home-back.png}" class="btn-home" alt=""></li>
-        <li><img src="#CHEMIN{IMG/boussole.png}" class="btn-boussole" alt=""></li>
-        <li><img src="#CHEMIN{IMG/Noeud-Gordien.png}" class="btn-secret" alt=""></li>
-        <li><img src="#CHEMIN{IMG/plume.png}" class="btn-plume" alt=""></li>
-    </ul>
-</nav>
-
-<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-    <div class="modal-dialog">
-        <div class="modal-content modal-lg">
+            <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-body">
+                         <div id="map_canvas"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+<!-- MAP MODAL -->
 
 
-            <div class="modal-body">
 
-                <div id="map_canvas"></div>
 
+<!--VIDEO MODAL -->
+            <p>
+                <a type="button" class="btn btn-primary btn-lg" href="http://www.youtube.com/watch?v=6w4FI0Jq0lI" role="button">video</a>
+
+            </p>
+
+
+            <!-- Video / Generic Modal -->
+            <div class="modal fade" id="mediaModal" tabindex="-1" role="dialog" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-body">
+                            <!-- content dynamically inserted -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+<!-- VIDEO MODAL -->
+
+
+<!-- Fb MODAL -->
+
+            <p>
+
+                <a type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#mediaModal2">
+                    facebook
+                </a>
+
+            </p>
+
+            <div class="modal fade" id="mediaModal2" tabindex="-1" role="dialog" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-body">
+
+                            <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Ffacebook&tabs=timeline&width=900&height=900&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="900" height="900" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+
+                        </div>
+                    </div>
+                </div>
             </div>
 
-        </div>
-    </div>
-</div>
+<!--Fb MODAL -->
+        <script async defer
+                src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAUW8H60nOZZQr47m3oH6uNZ_Uhlb6PGmA">
+        </script>
 
-<script async defer
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAUW8H60nOZZQr47m3oH6uNZ_Uhlb6PGmA">
-</script>
+        <script src="js/jquery.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/map.js"></script>
+        <script src="js/jquery-queryParser.min.js"></script>
+        <script src="js/modalVideo.js"></script>
+        <script src="js/facebookModal.js"></script>
 
-<script src="#CHEMIN{js/jquery.min.js}"></script>
-<script src="#CHEMIN{js/bootstrap.min.js}"></script>
-<script src="#CHEMIN{js/map.js}"></script>
-
-</body>
+        </body>
 </html>
